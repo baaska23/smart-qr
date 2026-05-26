@@ -51,6 +51,21 @@
     <a href="https://play.google.com/store/apps/details?id=com.univision.ss">Google Play</a>
   </div>
 
+  <a id="open" href="https://ss.univision.mn/">Open in app</a>
+<script>
+
+    if (/Android/i.test(navigator.userAgent)) {
+
+      document.getElementById('open').href =
+
+        'intent://open#Intent;scheme=unvss;package=com.univision.ss;' +
+
+        'S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.univision.ss;end';
+
+    }
+</script>
+ 
+
   <script>
     (function() {
       var ua = navigator.userAgent || navigator.vendor || window.opera;
