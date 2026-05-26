@@ -73,9 +73,9 @@
       var androidUrl = "https://play.google.com/store/apps/details?id=com.univision.ss";
 
       if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
-        window.location.href = iosUrl;
+        // window.location.href = iosUrl;
       } else if (/android/i.test(ua)) {
-        window.location.href = androidUrl;
+        // window.location.href = androidUrl;
       } else {
         document.getElementById("fallback").style.display = "block";
       }
